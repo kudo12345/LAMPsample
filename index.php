@@ -1,6 +1,6 @@
 <?php
-    $dsn = 'mysql:dbname=user;host=127.0.0.1;';
-    $user = 'otsubo';
+    $dsn = 'mysql:dbname=user;host=localhost;';
+    $user = 'kudo';
     $password = 'morijyobi';
     try {
         $dbh = new PDO($dsn, $user, $password);
@@ -27,7 +27,7 @@
 <div class="container">
     <?php foreach($result as $value) {
         echo "<h1>$value[id] $value[name] $value[age]</h1>";
-        
+
     }?>
 </div>
 </body>

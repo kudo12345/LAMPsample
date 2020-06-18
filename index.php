@@ -1,7 +1,7 @@
 <?php
     $dsn = 'mysql:sample_db=;host=localhost;';
-    $user = 'kudo';
-    $password = 'morijyobi';
+    $user = 'kudo2';
+    $password = 'MyNewPass4!';
     try {
         $dbh = new PDO($dsn, $user, $password);
         $sql = "select * from user";

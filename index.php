@@ -44,7 +44,7 @@ try {
     <div class="container">
         <?php if($_GET['fg'] == 1){ ?>
             <p>succes</p>
-        <?php else if($_GET['fg'] == 2){ ?>
+        <?php } else if($_GET['fg'] == 2){ ?>
             <p>no</p>
         <?php } ?>
     </div>

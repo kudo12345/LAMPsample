@@ -104,7 +104,7 @@ try {
                             <label for="age">AGE</label>
                             <input class="form-control" type="text" name="age" id="age">
                         </div>
-                        <button type="submit" class="btn btn-primary">Insert</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </form>
             </div>
 

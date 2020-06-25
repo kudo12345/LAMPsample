@@ -41,6 +41,8 @@ try {
         </div>
     </div>
 
+
+
     <div class="container">
         <?php if($_GET['fg'] == 1){ ?>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -58,6 +60,8 @@ try {
             </div>
         <?php } ?>
     </div>
+
+
 
     <div class="container">
         <ul class="nav nav-tabs">
@@ -139,16 +143,16 @@ try {
                     </thead>
 
                     <tbody>
-                        <?php foreach($del_list as $value) {?>
+                        <?php foreach ($del_list as $value) { ?>
                             <tr>
                                 <th><?php echo "$value[id]" ?></th>
                                 <td><?php echo "$value[name]" ?></td>
                                 <td><?php echo "$value[age]" ?></td>
                                 <td>
-                                    <from action="./delete.php" method="$_GET">
+                                    <form action="./delete.php" method="$_GET">
                                         <input type="text" class="d-none" name="id" value="<?php echo "$value[id]" ?>">
-                                        <button type="submit" class="btn btn-denger">delete</button>
-                                    </from>
+                                        <button type="submit" class="btn btn-danger">delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php } ?>
